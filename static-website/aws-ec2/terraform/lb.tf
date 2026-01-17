@@ -1,5 +1,6 @@
 module "alb" {
   source = "terraform-aws-modules/alb/aws"
+  version = "10.5.0"
 
   name                       = "nginx-alb"
   vpc_id                     = module.vpc.vpc_id
